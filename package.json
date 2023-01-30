@@ -1,0 +1,24 @@
+{
+  "name": "ex-3-quote-app",
+  "version": "1.0.0",
+  "description": "a Nodejs project that prints random quotes",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Murrmaid4/ex-3-quote-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Murrmaid4/ex-3-quote-app/issues"
+  },
+  "homepage": "https://github.com/Murrmaid4/ex-3-quote-app#readme",
+  "dependencies": {
+    "chalk": "^5.2.0"
+  }
+}
