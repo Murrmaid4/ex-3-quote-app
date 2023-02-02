@@ -23,7 +23,7 @@ console.log(flattenArray());
 Write a higher-order function loop that provides something like a for loop statement. It takes a value, a test function, an update function, and a body function. Each iteration, it first runs the test function on the current loop value and stops if that returns false. Then it calls the body function, giving it the current value. Finally, it calls the update function to create a new value and starts from the beginning. */
 
 // Your code here.
-function loop(start, test, update, body) {
+export function loop(start, test, update, body) {
     for (let value = start; test(value); value = update(value)) {
       body(value);
     }
@@ -45,7 +45,7 @@ Implement two versions of every (everySome and everyLoop) as a function that tak
 
 */
 
-function everyLoop(array, test) 
+export function everyLoop(array, test) 
 {
     for (let element of array) {
         if (!test(element)) return false;
@@ -53,7 +53,7 @@ function everyLoop(array, test)
       return true;
 }
 
-function everySome(array, test) 
+export function everySome(array, test) 
 {
     return !array.some(element => !test(element));
 } 
